@@ -1,38 +1,32 @@
 package fr.enissay.abstractmodules;
 
-public abstract class Module implements IModule{
+import lombok.Getter;
+import lombok.Setter;
 
-	private ObjectCall objCall;
+public abstract class Module implements IModule {
+
+	@Getter @Setter
+	public ObjectCall objectCall;
 	
 	/**
 	 * 
-	 * Set the object call
-	 * so it can be called
+	 * Used to make a callback
+	 * for all the Modules extending this
+	 * abstract class
 	 * 
-	 * @param objCall
 	 */
-	public void setObjectCall(ObjectCall objCall) {
-		this.objCall = objCall;
-	}
-
-	/**
-	 * 
-	 * To get the object call
-	 * 
-	 * @return objCall
-	 */
-	public ObjectCall getObjectCall() {
-		return objCall;
-	}
-	
-	public void call() {
-		if (objCall == null) return;
-		objCall.onCall(this);
+	public void Call() {
+		if (objectCall == null) return;
+		objectCall.onCall(this);
+		
 	}
 	
 	@Override
 	public String toString() {
-		return moduleName();
+		return "Module{" +
+		        "moduleName=" + moduleName() +
+		        ", ID=" + ID() +
+		        '}';
 	}
 	
 }

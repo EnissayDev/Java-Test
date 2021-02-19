@@ -3,8 +3,8 @@ package fr.enissay.animals;
 import fr.enissay.i.Animal;
 import fr.enissay.i.AnimalInfo;
 
-@AnimalInfo(age = 2)
-public class Dog implements Animal{
+@AnimalInfo(id = 4)
+public class Dog implements Animal {
 
 	@Override
 	public String name() {
@@ -13,7 +13,7 @@ public class Dog implements Animal{
 	
 	@Override
 	public void sendCall() {
-		System.out.println("The animal " + name() + " has been added");
+		System.out.println("The animal " + name() + " has been added to the List");
 	}
 
 }

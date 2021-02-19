@@ -15,18 +15,18 @@ public @interface AnimalInfo {
 
 	/**
 	 * 
-	 * To look if the animal is stupid lol
+	 * Check if the animal is the Favourite
 	 * 
 	 * @return false
 	 */
-	boolean isStupid() default false;
+	boolean isFavourite() default false;
 	
 	/**
 	 * 
-	 * To setup the age of the animal
+	 * Check the ID of the Animal
 	 * 
 	 * @return 0
 	 */
-	int age();
+	int id();
 	
 }

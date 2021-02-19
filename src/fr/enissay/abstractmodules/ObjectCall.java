@@ -9,6 +9,6 @@ public interface ObjectCall {
 	 * 
 	 * @param module
 	 */
-	void onCall(Module module);
+	void onCall(final Module module);
 
 }

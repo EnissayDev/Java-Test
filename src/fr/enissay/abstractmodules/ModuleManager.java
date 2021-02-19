@@ -1,6 +1,7 @@
 package fr.enissay.abstractmodules;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -8,6 +9,9 @@ import fr.enissay.abstractmodules.exceptions.ModuleNotFoundException;
 
 public class ModuleManager {
 
+	/**
+	 * List of the modules
+	 */
 	private List<Module> modules = new ArrayList<>();
 
 	/**
@@ -18,12 +22,15 @@ public class ModuleManager {
 	 * @return this
 	 * @throws ModuleNotFoundException
 	 */
-	public ModuleManager addModule(final Module module) throws ModuleNotFoundException {
+	@SuppressWarnings("unused")
+	public ModuleManager addModule(final Collection<? extends Module> module) throws ModuleNotFoundException {
 
-		if (module != null && (!this.modules.contains(module))) {
-			this.modules.add(module);
+		final Module theModule = module.stream().findAny().get();
+		
+		if (module != null && (!this.modules.contains(theModule))) {
+			this.modules.addAll(module);
 		} else if (module == null)
-			throw new ModuleNotFoundException("The module is null is not found !");
+			throw new ModuleNotFoundException("The module has not been found !");
 
 		return this;
 	}

@@ -2,7 +2,7 @@ package fr.enissay.abstractmodules.modules;
 
 import fr.enissay.abstractmodules.Module;
 
-public class ModuleTest2 extends Module{
+public class ModuleTest2 extends Module {
 
 	@Override
 	public String moduleName() {

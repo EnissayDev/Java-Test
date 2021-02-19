@@ -5,6 +5,9 @@ import java.util.List;
 
 public class Animals {
 
+	/**
+	 * List of all the Animals
+	 */
 	public List<Animal> animals = new ArrayList<>();
 
 	/**

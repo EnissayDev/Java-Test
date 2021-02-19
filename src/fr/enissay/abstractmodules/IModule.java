@@ -7,7 +7,7 @@ public interface IModule {
 	 * 
 	 * @return moduleName
 	 */
-	String moduleName();
+	String       moduleName();
 	
 	/**
 	 * 
@@ -15,6 +15,6 @@ public interface IModule {
 	 * 
 	 * @return ID
 	 */
-	Integer ID();
+	Integer      ID();
 
 }
