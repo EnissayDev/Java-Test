@@ -3,7 +3,7 @@ package fr.enissay.animals;
 import fr.enissay.i.Animal;
 import fr.enissay.i.AnimalInfo;
 
-@AnimalInfo(ID = 4)
+@AnimalInfo(ID = 4, isFavourite = true)
 public class Dog implements Animal {
 
 	@Override
