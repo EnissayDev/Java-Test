@@ -3,7 +3,7 @@ package fr.enissay.animals;
 import fr.enissay.i.Animal;
 import fr.enissay.i.AnimalInfo;
 
-@AnimalInfo(id = 2, isFavourite = true)
+@AnimalInfo(ID = 2, isFavourite = true)
 public class Cat implements Animal {
 
 	@Override
@@ -15,5 +15,4 @@ public class Cat implements Animal {
 	public void sendCall() {
 		System.out.println("The animal " + name() + " has been added to the List");
 	}
-
 }

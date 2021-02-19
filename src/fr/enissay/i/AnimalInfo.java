@@ -27,6 +27,6 @@ public @interface AnimalInfo {
 	 * 
 	 * @return 0
 	 */
-	int id();
+	int ID();
 	
 }

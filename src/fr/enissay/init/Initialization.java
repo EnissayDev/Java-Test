@@ -43,12 +43,11 @@ public class Initialization {
 
 		animals.getAnimals().forEach(animal -> System.out.println(" Animal: " + (animal != null ? animal.name() : "???")
 				+ " | ID: "
-				+ (animals.getAnimalAnnotationInfo(animal) != null ? animals.getAnimalAnnotationInfo(animal).id()
+				+ (animals.getAnimalAnnotationInfo(animal) != null ? animals.getAnimalAnnotationInfo(animal).ID()
 						: "???")
 				+ " | Favourite ?: "
 				+ (animals.getAnimalAnnotationInfo(animal) != null
 						? animals.getAnimalAnnotationInfo(animal).isFavourite()
 						: "???")));
 	}
-
 }

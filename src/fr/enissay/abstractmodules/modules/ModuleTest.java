@@ -13,5 +13,4 @@ public class ModuleTest extends Module {
 	public Integer ID() {
 		return 1;
 	}
-
 }

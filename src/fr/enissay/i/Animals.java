@@ -91,8 +91,11 @@ public class Animals {
 		else return null;
 	}
 	
+	/**
+	 * 
+	 * @return list of Animals
+	 */
 	public List<Animal> getAnimals(){
 		return animals;
 	}
-
 }
